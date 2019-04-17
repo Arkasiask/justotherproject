@@ -11,8 +11,8 @@ exports.run = (bot,message,args) => {
           .setFooter('Kasia | Si eres Moderador/Administrador del server consulta el comando "admin" ', bot.user.avatarURL)
           .addField(":gear: Utilidad", "info, avatar, invite, ping, server, kasia, report")
           .addField(":speech_balloon: Chat", "tirar, azar, f, +f, 8ball")
-          .addField(":bulb: Interactivos", "kiss, pat, hug, slap, bite, poke, lick, punch, kill, tickles, tongue, nalguitas")
-          .addField(":heart: Emocionales", "blush, dance, cry, sleep")
+          .addField(":bulb: Interactivos", "kiss, pat, hug, slap, bite, poke, lick, punch, kill, tickles, tongue, nalguitas, feed")
+          .addField(":heart: Emocionales", "blush, dance, cry, sleep, jpose")
 
 message.author.send(embed)
 message.delete(1000);
