@@ -12,7 +12,7 @@ exports.run = (bot,message,args) => {
       .addField("• Mi Nombre:", bot.user.username, true)
       .setTimestamp()
       .addField("• Programador:", "Arkasia#7701", true)
-      .addField("• Nº de comandos:", '``34``', true)
+      .addField("• Nº de comandos:", '``39``', true)
       .addField("• Nº de Servers:", bot.guilds.size, true)
       .addField("• Nº de Usuarios", bot.users.size, true)
       .addField("• Fecha de mi creación:", bot.user.createdAt, true)
