@@ -12,7 +12,7 @@ exports.run = (bot,message,args) => {
           .addField(":gear: Utilidad", "info, avatar, invite, ping, server, kasia, report")
           .addField(":speech_balloon: Chat", "tirar, azar, f, +f, 8ball")
           .addField(":bulb: Interactivos", "kiss, pat, hug, slap, bite, poke, lick, punch, kill, tickles, tongue, nalguitas, feed")
-          .addField(":heart: Emocionales", "blush, dance, cry, sleep, jpose")
+          .addField(":heart: Emocionales", "blush, dance, cry, sleep, jpose, suicide")
           .addField(":underage: NSFW", "fuck")
      
 
