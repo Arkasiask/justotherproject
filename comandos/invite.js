@@ -6,7 +6,7 @@ exports.run = (bot,message,args) => {
 
     	const inviteEmbed = new Discord.RichEmbed()
     		.setTitle("»»Click Aquí««")
-    		.setURL("https://discordapp.com/oauth2/authorize?client_id=549765424187703327&scope=bot&permissions=1345611902")
+    		.setURL("https://discordapp.com/oauth2/authorize?client_id=567847484743876649&scope=bot&permissions=1345611902")
     		.setColor("RANDOM")
     		.setDescription('**Invita a Kasia a travez del boton de arriba!!!**')
             .addField(":globe_with_meridians: Pagina del bot:", "https://kasia-bot.webnode.com.ve")
