@@ -20,7 +20,7 @@ fs.readdir("./comandos/", (err, files) => {
 
   client.on('ready', () => {
     console.log(`Un Arboles Renace`);
-    client.user.setActivity("k! Árboles de Kasia"), {type: "PLAYING"}
+    client.user.setActivity(` k!help | Servers: **${client.guild.size}** `), {type: "PLAYING"}
   });
 
   client.on('message', async message => {
