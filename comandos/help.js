@@ -10,7 +10,7 @@ exports.run = (bot,message,args) => {
           .setColor("RANDOM")
           .setFooter('Kasia | Si eres Moderador/Administrador del server consulta el comando "admin" ', bot.user.avatarURL)
           .addField(":gear: Utilidad", "info, avatar, invite, ping, server, kasia, report")
-          .addField(":speech_balloon: Chat", "tirar, azar, f, +f, 8ball")
+          .addField(":speech_balloon: Chat", "tirar, azar, f, +f, 8ball, ascii")
           .addField(":bulb: Interactivos", "kiss, pat, hug, slap, bite, poke, lick, punch, kill, tickles, tongue, nalguitas, feed")
           .addField(":heart: Emocionales", "blush, dance, cry, sleep, jpose, suicide")
           .addField(":underage: NSFW", "fuck")
