@@ -13,8 +13,13 @@ exports.run = (bot,message,args) => {
           "https://cdn.discordapp.com/attachments/368476786641862657/546548888862064642/Slap.gif", "https://cdn.discordapp.com/attachments/368476786641862657/546549041777999886/6fc8d6bbe59fba01-anime-slap-tumblr.gif",
           "https://cdn.discordapp.com/attachments/368476786641862657/546549112997412874/3iiocp7oxfvy.gif"]
 
+          const sEmbed = new Discord.RichEmbed()
+            .setDescription(" "+autor+" conmigo no puedes hacer eso, ABUSADOR!!! ")
+            .setColor("RANDOM")
+            .setImage(gifs[Math.floor(gifs.length * Math.random())])
+
           if (message.mentions.users.first() === message.author) return message.channel.send("¿Te vas a abofetear a ti mismo? :confused: ")
-          if (message.mentions.users.first() === bot.user) return message.channel.send("Conmigo no puedes hacer eso, abusador!!! ")
+          if (message.mentions.users.first() === bot.user) return message.channel.send(sEmbed)
           if (message.mentions.users.size <1) return message.reply("¿A quien le quieres dar una buena cachetada? :smiling_imp: ")
 
           const embed = new Discord.RichEmbed()

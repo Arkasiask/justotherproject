@@ -3,7 +3,7 @@ const bot = new Discord.Client();
 
 exports.run = (bot,message,args) => {
     let user = message.mentions.users.first();
-let autor = "<@!"+message.author.id+">"
+    let autor = "<@!"+message.author.id+">"
 
         const gifs =
             ["https://cdn.discordapp.com/attachments/368476786641862657/542423582022828033/sGVgr74.gif", "https://cdn.discordapp.com/attachments/368476786641862657/542431030855073813/eisk88U.gif",
@@ -18,7 +18,8 @@ let autor = "<@!"+message.author.id+">"
              "https://cdn.discordapp.com/attachments/544629061234720808/555812724026900480/blas1.gif", "https://cdn.discordapp.com/attachments/368476786641862657/555813044941357056/205943122000202.gif",
              "https://cdn.discordapp.com/attachments/544629061234720808/555813367294459925/tenor_2.gif", "https://cdn.discordapp.com/attachments/544629061234720808/555813483137073174/blas4.gif",
              "https://cdn.discordapp.com/attachments/544629061234720808/555813477479088141/tenor_1.gif", "https://cdn.discordapp.com/attachments/544629061234720808/555813486488322048/blas5.gif",
-             "https://cdn.discordapp.com/attachments/544629061234720808/555813964164890637/tumblr_mmnmy6DXJj1s26ehyo1_500.gif", "https://cdn.discordapp.com/attachments/368476786641862657/555814139851833346/tenor.gif"];
+             "https://cdn.discordapp.com/attachments/544629061234720808/555813964164890637/tumblr_mmnmy6DXJj1s26ehyo1_500.gif", "https://cdn.discordapp.com/attachments/368476786641862657/555814139851833346/tenor.gif",
+             "https://cdn.discordapp.com/attachments/566331826659000321/567886540072812554/besito.gif"];
 
      const autoEmbed = new Discord.RichEmbed()
                 .setDescription(" "+autor+"  Si nadie te da uno, yo sí. TOMA!!! >w<")

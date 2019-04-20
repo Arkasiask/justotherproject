@@ -14,8 +14,13 @@ exports.run = (bot,message,args) => {
                 "https://cdn.discordapp.com/attachments/544629061234720808/547745606974570523/VuLl.gif", "https://cdn.discordapp.com/attachments/544629061234720808/547745640952889344/tenor.gif",
                 "https://cdn.discordapp.com/attachments/544629061234720808/547745670552092692/tenor_1.gif"]
 
+      const sEmbed = new Discord.RichEmbed()
+        .setDescription(" "+autor+" ¿Planeas golpearme? ... Pues TOMA GOLPE!!! 😤  ")
+        .setColor("RANDOM")
+        .setImage(gifs[Math.floor(gifs.length * Math.random())])
+
          if (message.mentions.users.first() === message.author) return message.channel.send("No te golpees a ti mismo!!!")
-         if (message.mentions.users.first() === bot.user) return message.channel.send("¿Planeas golpearme?")
+         if (message.mentions.users.first() === bot.user) return message.channel.send(sEmbed)
          if (message.mentions.users.size <1) return message.reply("Dime a quien quieres golpear :smirk: ")
 
       const embed = new Discord.RichEmbed()

@@ -14,9 +14,14 @@ exports.run = (bot,message,args) => {
           "https://cdn.discordapp.com/attachments/544629061234720808/555816610288369665/08dd8f1b7ee99f2e462312d25daaf709.gif", "https://cdn.discordapp.com/attachments/544629061234720808/555816685601554433/tumblr_o2xp1rxwoS1tlmyzco1_500.gif",
           "https://cdn.discordapp.com/attachments/544629061234720808/555816702852595716/tumblr_ok57cfaPmS1svj22bo1_500.gif"];
 
-          if (message.mentions.users.first() === message.author) return message.channel.send("Si nadie te abraza, entonces abrazalos tu!!! :smile:")
-          if (message.mentions.users.size <1) return message.reply("Hay muchas personas en el server a quien abrazar, nombralo!!! :smile: ")
+          const sEmbed = new Discord.RichEmbed()
+          	.setDescription(" "+autor+" Toma un suave y tierno abrazo de **Kasia** 😁")
+          	.setColor("RANDOM")
+          	.setImage(gifs[Math.floor(gifs.length * Math.random())])
 
+          if (message.mentions.users.size <1) return message.channel.send(sEmbed)	
+          if (message.mentions.users.first() === message.author) return message.channel.send("Si nadie te abraza, entonces abrazalos tu!!! :smile:")
+          
           const embed = new Discord.RichEmbed()
               .setDescription(""+autor+" ha abrazado a "+user+" nwn ")
               .setColor("RANDOM")
