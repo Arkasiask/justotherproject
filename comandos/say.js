@@ -1,10 +1,20 @@
 const Discord = require("discord.js");
 
 exports.run = (bot,message,args) => {
-      var text = message.content.split(' ').slice(1).join(' ')
-      if (!text) return message.reply('Di algo ¿no?')
-      message.delete().catch();
-      message.channel.send(text)
+      
+      if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"])) return 
+
+     let argsresult;
+ 	 let sChannel = message.mentions.channels.first()
+
+ 	 message.delete()
+ 	 if(sChannel) {
+ 	 	argsresult = args.slice(1).join(" ")
+ 	 	sChannel.send(argsresult)
+ 	 } else {
+ 	 	argsresult = args.join(" ")
+ 	 	message.channel.send(argsresult)
+ 	 }
 
 }
 
