@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 exports.run = (bot,message,args) => {
     let autor = "<@!"+message.author.id+">"
 
-    const mensajito = ["Sonriele a la vida", "Siempre con una sonrisa", "Siempre tan sonriente ¿no? 😁", "Dinos ¿A que le sonries? 😮", "Que lind@ se ve sonriendo", "Linda sonrisa :flushed:", "😊"]
+    const mensajito = ["Sonriele a la vida", "Siempre con una sonrisa", "Siempre tan sonriente ¿no? 😁", "Dinos ¿A que le sonries? 😮", "Que lind@ se ve sonriendo", "Linda sonrisa 😊", "😊"]
 
     const gifs = 
     		["https://cdn.discordapp.com/attachments/568256545519960074/569409566916476946/1.gif", "https://cdn.discordapp.com/attachments/568256545519960074/569409395314917387/2.gif",
