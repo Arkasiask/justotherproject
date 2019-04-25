@@ -33,7 +33,7 @@ fs.readdir("./comandos/", (err, files) => {
     setInterval(function() {
     	let status = statuses[Math.floor(statuses.length * Math.random())]
     	client.user.setActivity(status, {type: "PLAYING"});
-    }, 20000)
+    }, 40000)
   });
 
   client.on('message', async message => {
