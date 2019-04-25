@@ -20,7 +20,20 @@ fs.readdir("./comandos/", (err, files) => {
 
   client.on('ready', () => {
     console.log(`Un Arboles Renace`);
-    client.user.setActivity("k!help | Un Arbol Renace" ), {type: "PLAYING"}
+    ///client.user.setActivity("Bot de Testeo"), {type: "PLAYING"}
+
+    let statuses = [
+    `Más de ${client.users.size} usuarios!`,
+    "k!help",
+    `En ${client.guilds.size} servers!`,
+    "Un árbol nuevo renace!!!",
+    "Cumple las reglas del server!!!"
+    ]
+
+    setInterval(function() {
+    	let status = statuses[Math.floor(statuses.length * Math.random())]
+    	client.user.setActivity(status, {type: "PLAYING"});
+    }, 20000)
   });
 
   client.on('message', async message => {
