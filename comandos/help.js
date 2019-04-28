@@ -13,7 +13,7 @@ exports.run = (bot,message,args) => {
           .addField(":speech_balloon: Chat", "tirar, azar, f, +f, 8ball, ascii")
           .addField(":bulb: Interactivos", "kiss, pat, hug, slap, bite, poke, lick, punch, kill, tickles, tongue, coffee, feed")
           .addField(":heart: Emocionales", "blush, dance, cry, sleep, jpose, suicide, smile, bored")
-          .addField(":underage: NSFW", "fuck")
+          .addField("Otras lista de comandos:", '``nsfw``')
 
 message.author.send(embed)
 message.delete(1000);
