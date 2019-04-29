@@ -27,10 +27,10 @@ message.channel.send(gEmbed);
   .setColor("#ff900a")
   .setTitle(":pushpin: | Registro de Kick")
   .setFooter("Kasia | Registro de usuario kickeado", bot.user.avatarURL)
-  .addField(":bust_in_silhouette: | Usuario Kickeado", user.username, true)
-  .addField(":label: | ID", user.id, true)
-  .addField(":spy: | Kickado por:", message.author.username, true)
-  .addField(":page_facing_up: | Razon", razon, true)
+  .addField("• Usuario Kickeado", user.username, true)
+  .addField("• ID", user.id, true)
+  .addField("• Kickado por:", message.author.username, true)
+  .addField("• Razon", razon, true)
 
   message.guild.member(user).kick(razon).reason
   user.send(embed)

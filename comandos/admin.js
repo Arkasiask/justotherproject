@@ -10,6 +10,9 @@ exports.run = (bot,message,args) => {
         .addField('•``k!say``', 'Envia un mensaje en nombre de **Kasia** en el canal actual o un canal especifico | ``k!say #canal <mensaje>``')
         .addField('•``k!cprefix``', 'Cambia el prefix de **Kasia** por uno personalizado | ``k!cprefix <nuevo prefix>``')
         .addField('•``k!clear``', 'Borra una cantidad especifica de mensajes | ``k!clear #``')
+        .addField('•``k!mute``', 'Mutea de forma indefinida a un usuario | ``k!mute @user <razon>')
+        .addField('•``k!tmute``', 'Mutea a un usuario del server por un tiempo especifico | ``k!tmute @user 1s/m/h <razon>')
+        .addField('•``k!unmute``', 'Desmutea a un usuario | ``k!unmute @user``')
         .addField('•``k!kick``', 'Expulsa a un usuario del servidor | ``k!kick @user <razon>``')
         .addField('•``k!ban``', 'Expulsa permanentemente a un usuario del servidor | ``k!ban @user <razon>``')
 
