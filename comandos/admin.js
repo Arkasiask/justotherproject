@@ -8,7 +8,7 @@ exports.run = (bot,message,args) => {
         .setColor("#e5106c")
         .setDescription('Nota: Para poder hacer uso de estos comandos debe existir un canal log llamado ``#klog`` donde se guardará el registro de cada acción con estos comandos')
         .addField('•``k!say``', 'Envia un mensaje en nombre de **Kasia** en el canal actual o un canal especifico | ``k!say #canal <mensaje>``')
-        .addField('•``k!embed``', 'Envia un Embed en formato de noticia al canal actual o un canal especifico | ``k!embed #canal | <titulo> | <mensaje> | <autor> | <link de la imagen> | <hex color sin el #>')
+        .addField('•``k!embed``', 'Envia un Embed en formato de noticia al canal actual o un canal especifico | ``k!embed #canal | <titulo> | <mensaje> | <autor> | <link de la imagen> | <hex color sin el #>``')
         .addField('•``k!cprefix``', 'Cambia el prefix de **Kasia** por uno personalizado | ``k!cprefix <nuevo prefix>``')
         .addField('•``k!clear``', 'Borra una cantidad especifica de mensajes | ``k!clear #``')
         .addField('•``k!mute``', 'Mutea de forma indefinida a un usuario | ``k!mute @user <razon>')
