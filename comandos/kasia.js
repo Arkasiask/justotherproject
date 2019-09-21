@@ -13,6 +13,7 @@ exports.run = (bot,message,args) => {
       .setThumbnail(bot.user.avatarURL)
       .addField("• Mi Nombre:", bot.user.username, true)
       .setTimestamp()
+      .addField("• Hereder@:", "Ikaru#3857", true)
       .addField("• Programador:", "Arkasia#7701", true)
       .addField("• Nº de comandos:", '``40``', true)
       .addField("• Nº de Servers:", " ``"+gsize+"`` ", true)
