@@ -39,6 +39,16 @@ fs.readdir("./comandos/", (err, files) => {
   client.on('message', async message => {
     if(message.author.bot) return;
     if(message.channel.type === "dm") return;
+      
+       if (message.content.startsWith('uwu')) {
+      message.channel.send('owo')
+    }
+     if (message.content.startsWith('awa')) {
+      message.channel.send('de uwu')
+    }
+     if (message.content.startsWith('owo')) {
+      message.channel.send('OwO!!')
+    }
 
     let prefixes = JSON.parse(fs.readFileSync("./prefixes.json", "utf8"));
 
